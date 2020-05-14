@@ -1,0 +1,101 @@
+body{
+    
+    background:#f1f1f1;
+    font-family:sans-serif;
+    padding: 10px;
+}
+
+*{
+    box-sizing: border-box;
+}
+/*Header*/
+.header{
+    background-color:white;
+    padding: 30px;
+    text-align: center;
+}
+
+.header h1{
+    font-size:50px;
+}
+
+/*Top Nav*/
+.topnav{
+    overflow:hidden;
+    background-color: black;
+}
+
+/*Top Nav Links*/
+
+.topnav a{
+    float:left;
+    display: block;
+    color:white;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+
+
+
+/*Create two unequal columns that float next to each other*/
+
+.leftcolumn{
+    float:left;
+    width:75%;
+}
+
+.rightcolumn{
+    float:left;
+    width:25%;
+    background-color: white;
+    padding-left: 20px;
+    
+    
+}
+
+.realimg{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    color: red;
+   
+    
+}
+
+
+
+
+/*Add card effect for articles*/
+.card{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+
+/*Clear Floats after the columns*/
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Responsive layout- when the screen is less than 800px wids make columns stack*/
+@media screen and (max-width: 800px){
+    .leftcolumn, .rightcolumn{
+        width:100%;
+        padding: 0;
+    }
+}
+
+/*Responsive layout- when the screen is less than 400px wids make nav stack*/
+@media screen and (max-width: 400px){
+    .topnav a{
+    float: none;
+    width:100%;
+}
+}
+
+
